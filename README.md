@@ -112,7 +112,8 @@ Uploads a batch of financial transactions for:
 - Tax computation  
 - Compliance checks  
 - Rule execution  
-- Exception generation  
+- Exception generation
+- Persisting into DB  
 
 ---
 
