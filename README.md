@@ -61,6 +61,15 @@ Hibernate will automatically create tables because:
 ```yaml
 spring.jpa.hibernate.ddl-auto: update
 ```
+#### Database Schema
+
+The database schema is provided in multiple formats:
+
+• `database-schema.png` → Visual ER diagram  
+• `docs/schema-sql/` → Executable DDL scripts Folder to recreate the database  
+• `database_schema_diagram.mwb` → MySQL Workbench model (optional)
+
+Use schema-sql Folder for quick setup .
 
 ---
 
