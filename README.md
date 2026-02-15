@@ -465,8 +465,15 @@ Project includes:
 **Coverage Report from IDE:** 
 
 ```bash
+mvn clean test
+```
+
+OR
+
+```bash
 mvn test
 ```
+
 <img width="1918" height="1027" alt="test coverage" src="https://github.com/user-attachments/assets/435945bb-8965-440f-9f2b-9fe9b5b06016" />
 
 
