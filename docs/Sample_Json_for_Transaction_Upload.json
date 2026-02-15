@@ -1,0 +1,120 @@
+[
+    {
+    "transactionId": "TXN1001",
+    "date": "2025-02-01",
+    "customerId": "CUST101",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 1800,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN1002",
+    "date": "2025-02-02",
+    "customerId": "CUST101",
+    "amount": 200000,
+    "taxRate": 0.18,
+    "reportedTax": 36000,
+    "transactionType": "SALE"
+     },
+     {
+    "transactionId": "TXN1003",
+    "date": "2025-02-03",
+    "customerId": "CUST102",
+    "amount": 5000,
+    "taxRate": 0.18,
+    "reportedTax": 500,
+    "transactionType": "SALE"
+    },
+     {
+    "transactionId": "TXN1004",
+    "date": "2025-02-04",
+    "customerId": "CUST101",
+    "amount": 15000,
+    "taxRate": 0.18,
+    "reportedTax": 2700,
+    "transactionType": "REFUND"
+    },
+     {
+    "transactionId": "TXN1005",
+    "date": "2025-02-03",
+    "customerId": "CUST101",
+    "amount": 250000,
+    "taxRate": 0.18,
+    "reportedTax": 800,
+    "transactionType": "REFUND"
+     },
+    {
+    "transactionId": "TXN1006",
+    "date": "2025-02-05",
+    "customerId": "CUST103",
+    "amount": -1000,
+    "taxRate": 0.18,
+    "reportedTax": 180,
+    "transactionType": "EXPENSE"
+     },
+     {
+    "transactionId": "TXN1007",
+    "date": "2025-02-06",
+    "customerId": "CUST104",
+    "amount": 120000,
+    "taxRate": 0.05,
+    "reportedTax": 6000,
+    "transactionType": "SALE"
+  },
+     {
+    "transactionId": "TXN-COMP-001",
+    "date": "2025-02-10",
+    "customerId": "CUST105",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 1800,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN-UNDER-001",
+    "date": "2025-02-10",
+    "customerId": "CUST106",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 1500,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN-OVER-001",
+    "date": "2025-02-10",
+    "customerId": "CUST107",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 2200,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN-NON-001",
+    "date": "2025-02-10",
+    "customerId": "CUST108",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": null,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN-BOUNDARY-COMP-001",
+    "date": "2025-02-10",
+    "customerId": "CUST108",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 1799,
+    "transactionType": "SALE"
+  },
+  {
+    "transactionId": "TXN-BOUNDARY-COMP-002",
+    "date": "2025-02-10",
+    "customerId": "CUST109",
+    "amount": 10000,
+    "taxRate": 0.18,
+    "reportedTax": 1801,
+    "transactionType": "SALE"
+  }
+
+]
