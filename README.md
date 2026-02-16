@@ -418,6 +418,7 @@ Transaction list cannot be empty
   }
 ]
 ```
+For more API execution screenshots, see the /docs folder.
 
 ---
 
