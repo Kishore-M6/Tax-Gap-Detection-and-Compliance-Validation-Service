@@ -418,7 +418,7 @@ Transaction list cannot be empty
   }
 ]
 ```
-For more API execution screenshots, see the /docs folder.
+For more API execution screenshots, see the /docs/postman-api-calls-screenshots folder.
 
 ---
 
