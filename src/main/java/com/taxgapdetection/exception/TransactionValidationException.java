@@ -1,6 +1,6 @@
 package com.taxgapdetection.exception;
 
-import org.springframework.stereotype.Component;
+
 
 import java.util.List;
 

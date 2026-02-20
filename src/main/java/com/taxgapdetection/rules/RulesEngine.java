@@ -6,8 +6,6 @@ import com.taxgapdetection.handler.TaxRuleHandler;
 import com.taxgapdetection.helper.EventType;
 import com.taxgapdetection.repository.TaxRuleRepository;
 import com.taxgapdetection.service.AuditLogService;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

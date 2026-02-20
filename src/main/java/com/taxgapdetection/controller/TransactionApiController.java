@@ -1,9 +1,7 @@
 package com.taxgapdetection.controller;
 
 import com.taxgapdetection.dto.TransactionDto;
-import com.taxgapdetection.entity.Transaction;
 import com.taxgapdetection.service.TransactionApiService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
