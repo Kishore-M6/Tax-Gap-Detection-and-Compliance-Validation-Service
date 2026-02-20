@@ -21,7 +21,7 @@ public class TransactionApiController {
     private final TransactionApiService service;
 
     @PostMapping(value = "/upload")
-    public ResponseEntity<?> uploadTransactions(@RequestBody List<TransactionDto> transactionDtos){
+    public ResponseEntity<?> uploadTransactions(@RequestBody  List<TransactionDto> transactionDtos){
 
         if(transactionDtos == null || transactionDtos.isEmpty()){
             return ResponseEntity
