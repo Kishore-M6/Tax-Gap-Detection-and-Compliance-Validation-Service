@@ -40,23 +40,22 @@ public class TransactionApiService {
                 taxService.compute(transaction);
                 rulesEngine.execute(transaction);
                 transaction.setValidationStatus(ValidationStatus.SUCCESS);
+            }catch (RuntimeException e){
+                transaction.setValidationStatus(ValidationStatus.FAILURE);
+
+                transaction.setFailureReasons(e.getMessage());
+            }
+           try{
                 Transaction txn = repository.save(transaction);
                 TransactionResponse res =TransactionResponse.of().transactionId(txn.getTransactionId())
                         .failureReasons(txn.getFailureReasons())
                         .validationStatus(txn.getValidationStatus()).build();
                 results.add(res);
-            }
-            catch (DataIntegrityViolationException ex) {
-
-                throw new DuplicateTransactionException(
-                        "Transaction already exists: "
-                                + transaction.getTransactionId());
-            }
-            catch (RuntimeException e){
-                transaction.setValidationStatus(ValidationStatus.FAILURE);
-
-                transaction.setFailureReasons(e.getMessage());
-            }
+            } catch (DataIntegrityViolationException ex) {
+               throw new DuplicateTransactionException(
+                       "Transaction already exists: "
+                               + transaction.getTransactionId());
+           }
             auditLogService.log(EventType.INGESTION, transaction.getTransactionId(),dto);
 
         }
